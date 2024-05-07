@@ -13,16 +13,14 @@ Projeto do curso "PHP e Behavior Driven Development BDD com Behat" da Alura
 - composer install
 - php -S localhost:8080
 - php -S localhost:8080 -t public/
-- php vendor/bin/phpunit --version
-- php vendor/bin/phpunit tests
-- php vendor/bin/phpunit --colors tests
-- php vendor/bin/phpunit
-- php vendor/bin/phpunit --testsuit=unit
-- php vendor/bin/phpunit --testsuit=integration
+- vendor/bin/behat --init
+- vendor/bin/behat
+- vendor/bin/behat --append-snippets
 
 - php bin/doctrine orm:schema-tool:create
 - php bin/doctrine dbal:run-sql "INSERT INTO usuarios (email, senha) VALUES ('email@example.com', '\$argon2i\$v=19\$m=65536,t=4,p=1\$WHpBb1FzTDVpTmQubU55bA\$jtZiWSSbmw1Ru4tYEq1SzShrMu0ap2PjblRQRubNPgo');"
+- php vendor/bin/doctrine orm:schema-tool:update -f
 
 ## Pacotes
 
-composer require --dev phpunit/phpunit ^10
+composer require --dev behat/behat
