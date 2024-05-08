@@ -5,7 +5,6 @@ Projeto do curso "PHP e Behavior Driven Development BDD com Behat" da Alura
 ## Links
 
 - [PHP](https://www.php.net/)
-- [PHPUnit](https://phpunit.de/index.html)
 
 ## Comandos
 
